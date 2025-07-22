@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practice Challenge Form</title>
+</head>
+<body>
+  <h2>Practice Challenge</h2>
+  <form>
+    <!-- Name: only letters, minimum 3 characters -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" pattern="[A-Za-z]{3,}" title="Only letters, minimum 3 characters" required><br><br>
+
+    <!-- Email: valid format and required -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Age: between 18 and 60 -->
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="18" max="60" required><br><br>
+
+    <!-- Phone: exactly 10 digits -->
+    <label for="phone">Phone:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="\d{10}" title="Enter 10-digit phone number" required><br><br>
+
+    <label for="password">Password:</lable><br>
+    <input type="password" id="password" name="password" min="6" max="12" title="enter atleast 3,6 digit" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</body>
+</html>
